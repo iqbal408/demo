@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>970x250</title>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+    <style>
+        .edgeLoad-EDGE-313259136 { visibility:hidden; }
+    </style>
+<script>
+   AdobeEdge.loadComposition('970x250', 'EDGE-313259136', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "970px",
+    height: "250px"
+}, {dom: [ ]}, {dom: [ ]});
+</script>
+<!--Adobe Edge Runtime End-->
+
+<!----------------------- Sizmek code goes here ------------------------------------>
+
+<script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+<!-- <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>-->   
+<script type="text/javascript">
+	function initEB(){
+		if (!EB.isInitialized()){
+			EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+		}else{
+			startAd();
+		}
+	}
+	function startAd(){
+		var Stage = document.getElementById('Stage');
+		Stage.style.cursor = "pointer";
+		Stage.addEventListener('click', clickThrough, false);
+	}
+	
+	function clickThrough(){
+		EB.clickthrough();
+		console.log("click through");
+	}
+	
+	window.addEventListener("load", initEB);
+	
+</script>
+
+<!----------------------- Sizmek Ends ------------------------------------>
+</head>
+<body style="margin:0;padding:0;">
+	<div id="Stage" class="EDGE-313259136">
+	</div>
+</body>
+</html>
